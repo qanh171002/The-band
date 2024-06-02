@@ -49,6 +49,10 @@ html {
   display: inline-block;
   border: none;
   cursor: pointer;
+  text-align: center;
+  appearance: none;
+  /* CSS cho trình duyệt safari */
+  -webkit-appearance: none;
 }
 
 .btn:hover {
@@ -62,6 +66,10 @@ html {
 
 .mt-16 {
   margin-top: 16px !important;
+}
+
+.mt-32 {
+  margin-top: 32px !important;
 }
 
 .row {
@@ -98,7 +106,7 @@ html {
 }
 
 #header {
-  height: 46.5px;
+  height: 46px;
   background-color: #000;
   position: fixed;
   top: 0;
@@ -131,9 +139,9 @@ html {
 
 #nav li a {
   text-decoration: none;
-  line-height: 46.5px;
+  line-height: 46px;
   padding: 0 24px;
-  display: inline-block;
+  display: block;
 }
 
 #nav li:hover .subnav {
@@ -167,9 +175,25 @@ html {
   font-size: 14px;
 }
 
+#header .mobile-menu-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+#header .mobile-menu-btn,
 #header .search-btn {
   float: right;
   padding: 0 21px;
+}
+
+#header .mobile-menu-btn:hover {
+  background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+  color: #000;
 }
 
 #header .search-btn:hover {
@@ -177,14 +201,15 @@ html {
   cursor: pointer;
 }
 
+#header .menu-icon,
 #header .search-icon {
   color: #fff;
   font-size: 15px;
-  line-height: 46.5px;
+  line-height: 46px;
 }
 
 #slider {
-  margin-top: 46.5px;
+  margin-top: 46px;
   padding-top: 50%;
   background: url("../img/slider/slider1.jpg") top center / cover no-repeat;
   position: relative;
@@ -204,11 +229,13 @@ html {
 #slider .text-heading {
   font-weight: 400;
   font-size: 24px;
+  text-shadow: 0 0 2px #000;
 }
 
 #slider .text-description {
   font-size: 15px;
   margin-top: 25px;
+  text-shadow: 0 0 2px #000;
 }
 
 #content {
@@ -216,10 +243,13 @@ html {
 
 #content .content-section {
   width: 800px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 64px;
   padding-bottom: 112px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 #content .section-heading {
@@ -247,7 +277,7 @@ html {
 }
 
 #content .member-list {
-  margin-top: 48px;
+  margin-top: 32px;
 }
 
 #content .member-name {
@@ -299,7 +329,7 @@ html {
 
 /* Places */
 .places-list {
-  margin-top: 32px;
+  margin-top: 16px;
 }
 
 .place-img:hover {
@@ -346,6 +376,15 @@ html {
   /* trong class có chuỗi fa-solid */
   width: 30px;
   display: inline-block;
+}
+
+.contact-info a {
+  color: #00e;
+  opacity: 1;
+}
+
+.contact-info a:hover {
+  opacity: 0.6;
 }
 
 .contact-form {

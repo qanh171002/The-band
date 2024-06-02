@@ -6,6 +6,8 @@
     <title>The Band</title>
     <link rel="icon" type="image/x-icon" href="./assets/img/logo/logo.png" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -25,7 +27,7 @@
           <li><a href="#tour">Tour</a></li>
           <li><a href="#contact">Contact</a></li>
           <li>
-            <a href="">
+            <a href="#">
               More
               <i class="fa-solid fa-caret-down"></i>
             </a>
@@ -38,11 +40,15 @@
         </ul>
         <!-- End Nav -->
 
-        <!-- Begin Search Button -->
+        <!-- Mobile Menu Button -->
+        <div id="mobile-menu" class="mobile-menu-btn">
+          <i class="menu-icon fa-solid fa-bars"></i>
+        </div>
+
+        <!-- Search Button -->
         <div class="search-btn">
           <i class="search-icon fa-solid fa-magnifying-glass"></i>
         </div>
-        <!-- End Search Button -->
       </div>
 
       <div id="slider">
@@ -74,7 +80,7 @@
             ea commodo consequat.
           </p>
           <div class="row member-list">
-            <div class="col col-3 text-center">
+            <div class="col col-3 s-col-full mt-32 text-center">
               <p class="member-name">Name</p>
               <img
                 src="./assets/img/member/member1.jpg"
@@ -82,7 +88,7 @@
                 class="member-img"
               />
             </div>
-            <div class="col col-3 text-center">
+            <div class="col col-3 s-col-full mt-32 text-center">
               <p class="member-name">Name</p>
               <img
                 src="./assets/img/member/member1.jpg"
@@ -90,7 +96,7 @@
                 class="member-img"
               />
             </div>
-            <div class="col col-3 text-center">
+            <div class="col col-3 s-col-full mt-32 text-center">
               <p class="member-name">Name</p>
               <img
                 src="./assets/img/member/member1.jpg"
@@ -117,7 +123,7 @@
             </ul>
             <!-- Places -->
             <div class="row places-list">
-              <div class="col col-3">
+              <div class="col col-3 s-col-full mt-16">
                 <img
                   src="./assets/img/places/place1.jpg"
                   alt="New York"
@@ -129,10 +135,12 @@
                   <p class="place-desc">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button class="btn js-buy-ticket">Buy tickets</button>
+                  <button class="btn js-buy-ticket s-full-width">
+                    Buy tickets
+                  </button>
                 </div>
               </div>
-              <div class="col col-3">
+              <div class="col col-3 s-col-full mt-16">
                 <img
                   src="./assets/img/places/place2.jpg"
                   alt="Paris"
@@ -144,10 +152,12 @@
                   <p class="place-desc">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button class="btn js-buy-ticket">Buy tickets</button>
+                  <button class="btn js-buy-ticket s-full-width">
+                    Buy tickets
+                  </button>
                 </div>
               </div>
-              <div class="col col-3">
+              <div class="col col-3 s-col-full mt-16">
                 <img
                   src="./assets/img/places/place3.jpg"
                   alt="San Francisco"
@@ -159,7 +169,9 @@
                   <p class="place-desc">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button class="btn js-buy-ticket">Buy tickets</button>
+                  <button class="btn js-buy-ticket s-full-width">
+                    Buy tickets
+                  </button>
                 </div>
               </div>
             </div>
@@ -172,16 +184,22 @@
           <p class="section-sub-heading">Fan? Drop a note!</p>
 
           <div class="row contact-content">
-            <div class="col col-2 contact-info">
+            <div class="col col-2 s-col-full contact-info">
               <p><i class="fa-solid fa-location-dot"></i>Chicago, US</p>
-              <p><i class="fa-solid fa-phone"></i>Phone: +00 151515</p>
-              <p><i class="fa-solid fa-envelope"></i>Email: mail@mail.com</p>
+              <p>
+                <i class="fa-solid fa-phone"></i>Phone:
+                <a href="tel: +00 151515">+00 151515</a>
+              </p>
+              <p>
+                <i class="fa-solid fa-envelope"></i>Email:
+                <a href="mailto: mail@mail.com">mail@mail.com</a>
+              </p>
             </div>
 
-            <div class="col col-2 contact-form">
+            <div class="col col-2 s-col-full contact-form">
               <form action="">
                 <div class="row">
-                  <div class="col col-2">
+                  <div class="col col-2 s-col-full">
                     <input
                       type="text"
                       name=""
@@ -191,7 +209,7 @@
                       class="form-control"
                     />
                   </div>
-                  <div class="col col-2">
+                  <div class="col col-2 s-col-full s-mt-8">
                     <input
                       type="email"
                       name=""
@@ -215,7 +233,7 @@
                   </div>
                 </div>
                 <input
-                  class="btn pull-right mt-16"
+                  class="contact-submit-btn btn pull-right mt-16 s-full-width"
                   type="submit"
                   value="SEND"
                 />
@@ -232,12 +250,12 @@
 
       <div id="footer">
         <div class="social-list">
-          <a href=""><i class="fa-brands fa-square-facebook"></i></a>
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
-          <a href=""><i class="fa-brands fa-square-snapchat"></i></a>
-          <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
-          <a href=""><i class="fa-brands fa-twitter"></i></a>
-          <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-square-snapchat"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
         <p class="copyright">Powered by <a href="#">w3.css</a></p>
       </div>
@@ -312,6 +330,37 @@
       modalContainer.addEventListener("click", function (event) {
         event.stopPropagation();
       });
+    </script>
+    <script>
+      var header = document.getElementById("header");
+      var mobileMenu = document.getElementById("mobile-menu");
+      var headerHeight = header.clientHeight;
+
+      // Đóng/mở mobile menu
+      mobileMenu.onclick = function () {
+        var isClosed = header.clientHeight === headerHeight;
+        if (isClosed) {
+          header.style.height = "auto";
+        } else {
+          header.style.height = null;
+        }
+      };
+      // Đóng mobile menu khi click vào phần tử trong menu
+      var menuItems = document.querySelectorAll("#nav li a[href*='#']");
+      for (var i = 0; i < menuItems.length; i++) {
+        var menuItem = menuItems[i];
+
+        menuItem.onclick = function (event) {
+          var isParentMenu =
+            this.nextElementSibling &&
+            this.nextElementSibling.classList.contains("subnav");
+          if (isParentMenu) {
+            event.preventDefault();
+          } else {
+            header.style.height = null;
+          }
+        };
+      }
     </script>
   </body>
 </html>
